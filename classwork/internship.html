@@ -9,7 +9,7 @@
 <body>
     <h1 class="text-center">Internship Application Form</h1>
     <div class="m-4">
-        <form action="submit.html" method="post"></form>
+        <form action="submit.html" method="post">
         <div class="mb-3">
             <label class="form-label" for="inputName">
                     Full Name   
@@ -38,27 +38,29 @@
             <label class="form-label" for="inputDegree">
                     Degree   
                 </label>
-            <select name="inputDegree" id="inputDegree">
-                <option value="choose the degree"></option>
-                <option value="BE">BE</option>
-                <option value="BTech">BTech</option>
-                <option value="B.com">B.com</option>
-                <option value="Bsc">Bsc</option>
+            <select class="form-select" id="inputDegree">
+                <option selected disabled>choose the degree</option>
+                <option>BE</option>
+                <option>BTech</option>
+                <option>B.com</option>
+                <option>Bsc</option>
             </select>
          </div>
          <div class="mb-3">
             <label class="form-label" for="inputLink">
                     Resume(link)   
                 </label>
-                <input type="link" class="form-control" id="inputLink" required>
+                <input type="url" class="form-control" id="inputLink" required>
          </div>
           <div class="mb-3">
             <label class="form-label" for="inputReason">
                     Why should we hire you?  
                 </label>
-                <textarea rows="3" cols="30" class="form-label" id="inputReason"></textarea>
+                <textarea class="form-control"  rows="3" id="inputReason"></textarea>
         </div>
+        <button type="submit" class="btn btn-success">Submit Application</button>
+        </form>
     </div>
-    <button type="submit" class="btn btn-primary">Submit Application</button>
+    
 </body>
 </html>
